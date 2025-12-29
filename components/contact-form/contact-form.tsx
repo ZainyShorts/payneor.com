@@ -115,7 +115,7 @@ export function ContactForm() {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="+1 (555) 123-4567"
+          placeholder="+971 58 576 8863"
           disabled={status === "loading"}
           required
           className="w-full"

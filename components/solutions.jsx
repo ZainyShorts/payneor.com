@@ -1,7 +1,9 @@
 'use client'
-import { useState } from "react" 
+import { useState,useEffect } from "react" 
 import Link from "next/link"
 import { ArrowLeft, ArrowRight, Code, Shield, BarChart3, Lock, Sparkles, Calendar, Clock, User, CheckCircle2 } from "lucide-react"
+import { useSearchParams } from "next/navigation"
+
 
 const solutions = [
   {
@@ -180,6 +182,19 @@ const blogContent = {
 export default function PaymentSolutionsWithBlogs() {
   const [hoveredCard, setHoveredCard] = useState(null)
   const [currentBlog, setCurrentBlog] = useState(null)
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const scrollToSection = searchParams.get("scrollTo")
+    if (scrollToSection === "solutions") {
+      const section = document.getElementById("solutions-section")
+      section?.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [searchParams])
+
+ 
+
+
 
   // Blog Article View
   if (currentBlog !== null) {
@@ -338,7 +353,7 @@ export default function PaymentSolutionsWithBlogs() {
 
   // Solutions Grid View
   return (
-    <section className="py-24 bg-slate-50" style={{ fontFamily: "'Inter', sans-serif" }}>
+    <section  id="solutions-section" className="py-24 bg-slate-50" style={{ fontFamily: "'Inter', sans-serif" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
       `}</style>

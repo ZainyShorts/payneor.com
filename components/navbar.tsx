@@ -42,6 +42,7 @@ export function Navbar() {
   }, [mobileMenuOpen])
 
   const navLinks = [
+    { href: "/", label: "Home" },
     { href: "/about", label: "About us" },
     { href: "/products-and-solutions", label: "Products & Solutions" },
     { href: "/faqs", label: "FAQs" },

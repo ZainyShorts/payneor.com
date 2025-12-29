@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ChevronDown, MessageCircleQuestion, Search, ArrowRight, Sparkles } from "lucide-react"
+import Link from "next/link"
 
 const faqCategories = [
   { id: "general", label: "General", count: 4 },
@@ -187,15 +188,17 @@ export function FAQ() {
                   <MessageCircleQuestion className="h-8 w-8 text-orange-600" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Still have questions?</h3>
+                
+                <h3 className="text-2xl cursor-pointer font-bold text-slate-900 mb-3">Still have questions?</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                  Can't find the answer you're looking for? Our support team is here to help you 24/7.
+                  Can&apos;t find the answer you&apos;re looking for? Our support team is here to help you 24/7.
                 </p>
-
-                <button className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold text-white bg-orange-500 hover:bg-orange-600 transition-colors shadow-md">
+<Link href={'/contact'} >
+                <button className="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold text-white bg-orange-500 hover:bg-orange-600 transition-colors shadow-md">
                   Contact Support
                   <ArrowRight className="h-5 w-5" />
                 </button>
+                </Link>
 
                 {/* Stats */}
                 <div className="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-200">

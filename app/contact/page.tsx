@@ -2,6 +2,7 @@ import { ContactForm } from "@/components/contact-form/contact-form"
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react" 
 import { Navbar } from "@/components/navbar" 
 import { Footer } from "@/components/footer"
+import Link from "next/link"
 
 export const metadata = {
   title: "Contact Us - PayNeor Payment Solutions",
@@ -56,14 +57,14 @@ export default function ContactPage() {
               icon: Phone,
               title: "Call Our Team",
               desc: "Mon–Fri · 9am–6pm EST",
-              value: "+1 (234) 567-890",
+              value: "+971 58 576 8863",
               href: "tel:+1234567890",
             },
             {
               icon: MapPin,
               title: "Headquarters",
-              desc: "San Francisco, CA",
-              value: "123 Business St, CA 94105",
+              desc: "UAE",
+              value: "Dubai",
             },
           ].map((item, i) => (
             <div
@@ -123,14 +124,13 @@ export default function ContactPage() {
             lightning-fast payment infrastructure.
           </p>
 
-          <button className="inline-flex items-center gap-2 bg-white text-orange-600 px-10 py-4 rounded-xl font-semibold text-lg shadow-lg hover:bg-orange-50 hover:scale-105 transition-all">
+          <Link href={'/contact'} className="inline-flex items-center gap-2 bg-white text-orange-600 px-10 py-4 rounded-xl font-semibold text-lg shadow-lg hover:bg-orange-50 hover:scale-105 transition-all">
             Get Started Today
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </Link>
         </div>
       </section>
     </main>  
-    <Footer/>
      </>
   )
 }
