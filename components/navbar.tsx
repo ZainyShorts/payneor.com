@@ -61,11 +61,11 @@ export function Navbar() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-1 group" aria-label="NeoPay Home">
+            <Link href="/" className="flex items-center space-x-1 group" aria-label="Payneor Home">
               <span className="text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
                 PAY
-              </span>
               <span className="text-3xl font-bold tracking-tight text-primary">NEOR</span>
+              </span>
             </Link>
 
             {/* Desktop Navigation */}

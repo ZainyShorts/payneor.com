@@ -40,11 +40,11 @@ export function CompanyMilestone() {
     },
     {
       year: "2022",
-      title: "Established NEO PAY as a fully owned subsidiary",
+      title: "Established Payneor as a fully owned subsidiary",
     },
     {
       year: "2024",
-      title: "Mashreq sold a majority stake in NEO PAY",
+      title: "Mashreq sold a majority stake in Payneor",
     },
   ]
 

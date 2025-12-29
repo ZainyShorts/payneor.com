@@ -14,9 +14,9 @@ const faqCategories = [
 const faqs = [
   {
     category: "general",
-    question: "What is Pay Neor and how does it work?",
+    question: "What is Payneor and how does it work?",
     answer:
-      "Pay Neor is a cutting-edge payment solution designed for businesses in the Middle East. We provide seamless payment processing, multi-currency support, and state-of-the-art security features to help your business scale effortlessly.",
+      "Payneor is a cutting-edge payment solution designed for businesses in the Middle East. We provide seamless payment processing, multi-currency support, and state-of-the-art security features to help your business scale effortlessly.",
   },
   {
     category: "general",
@@ -34,7 +34,7 @@ const faqs = [
     category: "general",
     question: "Do you offer APIs for custom integrations?",
     answer:
-      "Yes! We provide comprehensive RESTful APIs, SDKs for major platforms, and detailed documentation. Our developer tools make it easy to integrate Pay Neor into your existing systems.",
+      "Yes! We provide comprehensive RESTful APIs, SDKs for major platforms, and detailed documentation. Our developer tools make it easy to integrate Payneor into your existing systems.",
   },
   {
     category: "payments",
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     category: "security",
-    question: "How secure is my data with Pay Neor?",
+    question: "How secure is my data with Payneor?",
     answer:
       "We employ bank-grade 256-bit encryption, are PCI DSS Level 1 certified, and use advanced fraud detection AI. Your data is stored in secure, SOC 2 compliant data centers.",
   },
@@ -130,7 +130,7 @@ export function FAQ() {
             </h1>
 
             <p className="text-lg text-slate-600 leading-relaxed">
-              Everything you need to know about Pay Neor. Can't find what you're looking for?{" "}
+              Everything you need to know about Payneor. Can't find what you're looking for?{" "}
               <a href="#contact" className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
                 Contact our support team
               </a>
