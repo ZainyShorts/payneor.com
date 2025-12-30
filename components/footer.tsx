@@ -36,9 +36,9 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-1 mb-6">
               <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                NEO
+                PAY
+              <span className="text-2xl font-bold tracking-tight text-foreground">NEOR</span>
               </span>
-              <span className="text-2xl font-bold tracking-tight text-foreground">PAY</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-8">
               Powering the future of payments in the Middle East. State-of-the-art payment solutions designed for scale.
