@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -35,10 +36,20 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-1 mb-6">
-              <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+            {/* <Image src='/payneor2.png' alt="PayNeor" width={50} height={50}  /> */}
+              {/* <span className="text-2xl  tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
                 PAY
               <span className="text-2xl font-bold tracking-tight text-foreground">NEOR</span>
-              </span>
+              </span> */}
+              <span className="text-2xl tracking-tight">
+  <span className="font-pay italic bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+    PAY
+  </span>
+  <span className="font-neor italic font-bold text-foreground">
+     NEOR
+  </span>
+</span>
+
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-8">
               Powering the future of payments in the Middle East. State-of-the-art payment solutions designed for scale.

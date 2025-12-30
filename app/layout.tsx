@@ -5,15 +5,29 @@ import { Analytics } from "@vercel/analytics/next"
 import { Footer } from "@/components/footer"
 import "./globals.css"
 
-const spaceGrotesk = Space_Grotesk({
+// const spaceGrotesk = Space_Grotesk({
+//   subsets: ["latin"],
+//   variable: "--font-heading",
+//   weight: ["400", "500", "600", "700"],
+// })
+
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-body",
+// })
+
+import { Poppins } from "next/font/google"
+
+const spaceGrotesk = Poppins({
   subsets: ["latin"],
-  variable: "--font-heading",
-  weight: ["400", "500", "600", "700"],
+  weight: ["700"],
+  variable: "--font-pay",
 })
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-body",
+  weight: ["600"],
+  variable: "--font-neor",
 })
 
 export const metadata: Metadata = {

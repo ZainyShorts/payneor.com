@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -62,10 +63,11 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-1 group" aria-label="Payneor Home">
-              <span className="text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+            <Image src='/payneor2.png' alt="PayNeor" width={150} height={30}  />
+              {/* <span className="text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
                 PAY
               <span className="text-3xl font-bold tracking-tight text-primary">NEOR</span>
-              </span>
+              </span> */}
             </Link>
 
             {/* Desktop Navigation */}
