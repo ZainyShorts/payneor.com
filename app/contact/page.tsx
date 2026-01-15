@@ -64,7 +64,7 @@ export default function ContactPage() {
               icon: MapPin,
               title: "Headquarters",
               desc: "UAE",
-              value: "Dubai",
+              value: "Office M23 , Sky Business Centre , Nad Al Hammar , Dubai",
             },
           ].map((item, i) => (
             <div

@@ -7,6 +7,13 @@ import { useState } from "react"
 
 export function Hero() {
   const [isHovered, setIsHovered] = useState(false)
+  const paymentMethods = [
+  { name: "Visa", img: "/payments/visa.svg" },
+  { name: "Mastercard", img: "/payments/mastercard.svg" },
+  { name: "Apple Pay", img: "/payments/apple-pay.png" },
+  { name: "Google Pay", img: "/payments/g-pay.png" },
+  // { name: "PayPal", img: "/payments/paypal.png" },
+]
 
   return (
     <>
@@ -329,13 +336,14 @@ export function Hero() {
               Trusted by industry leaders
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-8">
-              {["Visa", "Mastercard", "Apple Pay", "Google Pay", "PayPal"].map((brand) => (
+              {paymentMethods.map((brand: any) => (
                 <div
                   key={brand}
                   className="text-2xl font-black text-slate-300 tracking-wide hover:text-orange-500 transition-all duration-500 cursor-pointer hover:scale-110"
                   style={{ fontFamily: "'Outfit', sans-serif" }}
                 >
-                  {brand}
+                  <Image src={brand.img} height={50} width={50} alt="Payment methods" />
+                  {brand.name}
                 </div>
               ))}
             </div>

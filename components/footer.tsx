@@ -10,7 +10,6 @@ export function Footer() {
   const footerLinks = {
     company: [
       { label: "About Us", href: "/about" },
-      // { label: "Careers", href: "/careers" },
       { label: "Press", href: "/press" },
       { label: "Blog", href: "/blog" },
     ],
@@ -22,7 +21,6 @@ export function Footer() {
     ],
     support: [
       { label: "Help Center", href: "/contact" },
-      // { label: "Documentation", href: "/docs" },
       { label: "Contact", href: "/contact" },
       { label: "FAQs", href: "/faqs" },
     ],
@@ -36,20 +34,17 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-1 mb-6">
-            {/* <Image src='/payneor2.png' alt="PayNeor" width={50} height={50}  /> */}
+              {/* <Image src='/payneor2.png' alt="PayNeor" width={50} height={50}  /> */}
               {/* <span className="text-2xl  tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
                 PAY
               <span className="text-2xl font-bold tracking-tight text-foreground">NEOR</span>
               </span> */}
               <span className="text-2xl tracking-tight">
-  <span className="font-pay italic bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-    PAY
-  </span>
-  <span className="font-neor italic font-bold text-foreground">
-     NEOR
-  </span>
-</span>
-
+                <span className="font-pay italic bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+                  PAY
+                </span>
+                <span className="font-neor italic font-bold text-foreground">NEOR</span>
+              </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-8">
               Powering the future of payments in the Middle East. State-of-the-art payment solutions designed for scale.
@@ -61,7 +56,7 @@ export function Footer() {
                 href="mailto:info@payneor.com"
                 className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors">
+                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors flex-shrink-0">
                   <Mail className="w-4 h-4 text-orange-500" />
                 </span>
                 info@payneor.com
@@ -70,13 +65,13 @@ export function Footer() {
                 href="tel:+971585768863"
                 className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors">
+                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors flex-shrink-0">
                   <Phone className="w-4 h-4 text-orange-500" />
                 </span>
-               +971 58 576 8863
+                +971 58 576 8863
               </a>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center">
+                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-4 h-4 text-orange-500" />
                 </span>
                 Dubai, United Arab Emirates
@@ -143,38 +138,27 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            {/* Copyright */}
-            <p className="text-sm text-muted-foreground">© {currentYear} Payneor. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            {/* Copyright - aligned left on desktop, center on mobile */}
+            <p className="text-sm text-muted-foreground md:order-1 order-2">
+              © {currentYear} Payneor. All rights reserved.
+            </p>
 
-            {/* Legal Links */}
-            <div className="flex items-center gap-6">
-              {/* <Link
-                href="https://www.termsfeed.com/live/f153b255-e66a-4442-b11d-de7354ac679c"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </Link> */}
-              {/* <span className="w-1 h-1 rounded-full bg-muted-foreground/40" /> */}
-              {/* <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Terms of Service
-              </Link> */}
-              {/* <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
-              <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Contact Us
-              </Link> */}
+            {/* Payment Methods - centered */}
+            <div className="flex items-center gap-4 md:order-2 order-1 flex-wrap justify-center">
+              <Image src="/payments/visa.svg" alt="Visa" width={40} height={24} />
+              <Image src="/payments/mastercard.svg" alt="Mastercard" width={40} height={24} />
+              <Image src="/payments/apple-pay.png" alt="Apple Pay" width={40} height={24} />
+              <Image src="/payments/g-pay.png" alt="Google Pay" width={40} height={24} />
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center gap-3">
-              <Link
-                href="https://www.termsfeed.com/live/f153b255-e66a-4442-b11d-de7354ac679c"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              
-            </div>
+            {/* Privacy Policy - aligned right on desktop, center on mobile */}
+            <Link
+              href="https://www.termsfeed.com/live/f153b255-e66a-4442-b11d-de7354ac679c"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors md:order-3 order-3"
+            >
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>
