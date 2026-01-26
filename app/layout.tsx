@@ -54,19 +54,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png",
   },
 }
 
