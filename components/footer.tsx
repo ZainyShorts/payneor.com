@@ -37,7 +37,7 @@ export function Footer() {
               <div className="flex items-baseline gap-1">
               
               </div>
-              <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png" alt="PayNeor" width={100} height={32} className="hidden sm:block h-16 w-auto" />
+              <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png" alt="PayNeor" width={100} height={60} className="hidden sm:block h-24 w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-8">
               Powering the future of payments in the Middle East. State-of-the-art payment solutions designed for scale.
