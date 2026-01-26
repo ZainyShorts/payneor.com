@@ -4,7 +4,7 @@ export function CompanyMilestone() {
   const milestones = [
     {
       year: "1990",
-      title: "Mashreq starts Business",
+      title: "Payneor starts Business",
     },
     {
       year: "2014",
@@ -20,7 +20,7 @@ export function CompanyMilestone() {
     },
     {
       year: "2017",
-      title: "Mashreq launched Apple Pay and Samsung Pay",
+      title: "Payneor launched Apple Pay and Samsung Pay",
     },
     {
       year: "2018",
@@ -32,7 +32,7 @@ export function CompanyMilestone() {
     },
     {
       year: "2020",
-      title: "Launched Emirates Digital Wallet acceptance on Mashreq terminals",
+      title: "Launched Emirates Digital Wallet acceptance on Payneor terminals",
     },
     {
       year: "2021",
@@ -44,7 +44,7 @@ export function CompanyMilestone() {
     },
     {
       year: "2024",
-      title: "Mashreq sold a majority stake in Payneor",
+      title: "Payneor sold a majority stake in Payneor",
     },
   ]
 

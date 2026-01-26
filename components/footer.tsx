@@ -49,8 +49,8 @@ export function Footer() {
                 href="mailto:info@payneor.com"
                 className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors flex-shrink-0">
-                  <Mail className="w-4 h-4 text-orange-500" />
+                <span className="w-10 h-10 rounded-full bg-white-50 flex items-center justify-center group-hover:bg-white transition-colors flex-shrink-0">
+                  <Mail className="w-4 h-4 text-[#1d7dd1]" />
                 </span>
                 info@payneor.com
               </a>
@@ -58,14 +58,14 @@ export function Footer() {
                 href="tel:+971585768863"
                 className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors flex-shrink-0">
-                  <Phone className="w-4 h-4 text-orange-500" />
+                <span className="w-10 h-10 rounded-full bg-white flex items-center justify-center group-hover:bg-white transition-colors flex-shrink-0">
+                  <Phone className="w-4 h-4 text-[#1d7dd1]" />
                 </span>
                 +971 58 576 8863
               </a>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <span className="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-4 h-4 text-orange-500" />
+                <span className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-4 h-4 text-[#1d7dd1]" />
                 </span>
                 Dubai, United Arab Emirates
               </div>

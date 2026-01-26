@@ -55,7 +55,7 @@ export function Navbar() {
             <div className="hidden lg:flex lg:items-center lg:gap-x-4">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 rounded-full shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105 active:scale-95"
+                className="bg-[#1d7dd1] hover:bg-[#89e897] text-primary-foreground font-semibold px-8 rounded-full shadow-sm transition-all duration-300 hover:shadow-md hover:scale-105 active:scale-95"
                 asChild
               >
                 <Link href="/contact">Get in touch</Link>

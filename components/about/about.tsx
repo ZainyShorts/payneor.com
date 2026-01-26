@@ -139,9 +139,9 @@ export function AboutSection() {
             </div>
 
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 leading-[1.05] mb-8">
-              <span className="block mb-2">Give your business a</span>
+              <span className="block mb-2">Give your business</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#1d7dd1] via-[#1d7dd1] to-[#1d7dd1] animate-gradient">
-                competitive edge
+                a competitive edge
               </span>
               <span className="block mt-2 text-gray-900">with PAYNEOR</span>
             </h2>

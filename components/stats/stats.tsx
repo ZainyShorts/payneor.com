@@ -6,7 +6,7 @@ import { CreditCard, Store, MapPin, Smartphone, Shield, Lock, Zap } from "lucide
 const stats = [
   {
     icon: CreditCard,
-    value: 400,
+    value: 100,
     suffix: "M+",
     label: "Transactions in UAE",
     description: "Processed securely",
@@ -165,36 +165,31 @@ export function StatsSection() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
               key={stat.label}
               className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-300 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:-translate-y-1"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Top gradient line */}
               <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.color} rounded-t-2xl`} />
 
-              {/* Icon */}
               <div className={`w-14 h-14 rounded-xl ${stat.bgColor} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <stat.icon className={`w-7 h-7 ${stat.iconColor}`} strokeWidth={2} />
               </div>
 
-              {/* Counter */}
               <AnimatedCounter value={stat.value} suffix={stat.suffix} />
 
-              {/* Label */}
               <h3 className="mt-4 text-lg font-semibold text-gray-900">
                 {stat.label}
               </h3>
 
-              {/* Description */}
               <p className="mt-1.5 text-sm text-gray-500">
                 {stat.description}
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Trust Badges */}
         <div className="mt-20 flex flex-wrap items-center justify-center gap-6 md:gap-8">
