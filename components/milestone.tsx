@@ -55,7 +55,7 @@ export function CompanyMilestone() {
         <div className="flex flex-col items-center mb-16">
           <div className="mb-4">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 4L10 13V35L24 44L38 35V13L24 4Z" fill="#F97316" />
+              <path d="M24 4L10 13V35L24 44L38 35V13L24 4Z" fill="#1d7dd1" />
               <path d="M24 14L17 19V29L24 34L31 29V19L24 14Z" fill="white" />
             </svg>
           </div>
@@ -70,7 +70,7 @@ export function CompanyMilestone() {
         {/* Vertical Timeline */}
         <div className="relative">
           {/* Straight Vertical Line - positioned in center on desktop, left on mobile */}
-          <div className="absolute left-6 md:left-1/2 md:-translate-x-[2px] top-0 bottom-0 w-1 bg-[#F97316]" />
+          <div className="absolute left-6 md:left-1/2 md:-translate-x-[2px] top-0 bottom-0 w-1 bg-[#1d7dd1]" />
 
           {/* Milestones */}
           <div className="space-y-12 md:space-y-16">
@@ -119,7 +119,7 @@ export function CompanyMilestone() {
 
           {/* End cap */}
           <div className="absolute left-6 md:left-1/2 md:-translate-x-1/2 -bottom-4">
-            <div className="w-4 h-4 rounded-full bg-[#F97316]" />
+            <div className="w-4 h-4 rounded-full bg-[#1d7dd1]" />
           </div>
         </div>
       </div>

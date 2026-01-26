@@ -125,7 +125,7 @@ export function ContactForm() {
       <Button
         type="submit"
         disabled={status === "loading"}
-        className="w-full bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white font-semibold py-3 rounded-lg transition-all"
+        className="w-full bg-gradient-to-r from-[#1d7dd1] to-[#72b17c] hover:from-[#1d7dd1] hover:to-[#89e897] text-white font-semibold py-3 rounded-lg transition-all"
       >
         {status === "loading" ? (
           <>

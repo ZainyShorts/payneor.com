@@ -192,10 +192,6 @@ export default function PaymentSolutionsWithBlogs() {
     }
   }, [searchParams])
 
- 
-
-
-
   // Blog Article View
   if (currentBlog !== null) {
     const post = blogContent[currentBlog]
@@ -209,11 +205,11 @@ export default function PaymentSolutionsWithBlogs() {
         `}</style>
 
         {/* Header */}
-        <header className="border-b border-slate-200 bg-white sticky top-0 z-50 shadow-sm">
+        <header className="border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
           <div className="max-w-5xl mx-auto px-6 py-5">
             <button
               onClick={() => setCurrentBlog(null)}
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-orange-600 transition-colors duration-300 font-medium"
+              className="inline-flex items-center gap-2 text-gray-600 hover:text-[#1d7dd1] transition-colors duration-300 font-medium"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Solutions
@@ -222,19 +218,19 @@ export default function PaymentSolutionsWithBlogs() {
         </header>
 
         {/* Hero Image */}
-        <div className="relative h-[500px] overflow-hidden bg-slate-900">
+        <div className="relative h-[500px] overflow-hidden bg-gray-900">
           <img
             src={post.heroImage}
             alt={post.title}
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
           
           {/* Hero Content */}
           <div className="absolute inset-0 flex items-end">
             <div className="max-w-4xl mx-auto px-6 pb-16 w-full">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6">
-                <Icon className="w-4 h-4 text-orange-400" />
+                <Icon className="w-4 h-4 text-[#1d7dd1]" />
                 <span className="text-sm font-semibold text-white uppercase tracking-wide">
                   {post.category}
                 </span>
@@ -243,21 +239,21 @@ export default function PaymentSolutionsWithBlogs() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
                 {post.title}
               </h1>
-              <p className="text-xl text-slate-200 mb-8 max-w-3xl">
+              <p className="text-xl text-gray-200 mb-8 max-w-3xl">
                 {post.subtitle}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 text-slate-300">
+              <div className="flex flex-wrap items-center gap-6 text-gray-300">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-[#1d7dd1] flex items-center justify-center">
                     <User className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="font-semibold text-white">{post.author}</p>
-                    <p className="text-sm text-slate-300">{post.authorRole}</p>
+                    <p className="text-sm text-gray-300">{post.authorRole}</p>
                   </div>
                 </div>
-                <div className="h-8 w-px bg-slate-600" />
+                <div className="h-8 w-px bg-gray-600" />
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm">{post.date}</span>
@@ -275,24 +271,24 @@ export default function PaymentSolutionsWithBlogs() {
         <article className="max-w-4xl mx-auto px-6 py-16">
           {post.sections.map((section, index) => (
             <div key={index} className="mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                <span className="w-2 h-8 bg-gradient-to-b from-orange-500 to-orange-600 rounded-full" />
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span className="w-2 h-8 bg-[#1d7dd1] rounded-full" />
                 {section.heading}
               </h2>
               
               {section.content && (
-                <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   {section.content}
                 </p>
               )}
 
               {section.points && (
-                <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <ul className="space-y-4">
                     {section.points.map((point, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" strokeWidth={2} />
-                        <span className="text-slate-700 leading-relaxed">{point}</span>
+                        <CheckCircle2 className="w-6 h-6 text-[#1d7dd1] flex-shrink-0 mt-0.5" strokeWidth={2} />
+                        <span className="text-gray-700 leading-relaxed">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -302,15 +298,15 @@ export default function PaymentSolutionsWithBlogs() {
           ))}
 
           {/* CTA Section */}
-          <div className="mt-16 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-12 text-center">
+          <div className="mt-16 bg-[#1d7dd1] rounded-2xl p-12 text-center">
             <h3 className="text-3xl font-bold text-white mb-4">
               Ready to Get Started?
             </h3>
-            <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
               Experience the power of enterprise-grade payment infrastructure
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 rounded-xl bg-orange-500 text-white font-semibold hover:bg-orange-600 transition-colors duration-300 shadow-lg hover:shadow-xl">
+              <button className="px-8 py-4 rounded-xl bg-white text-[#1d7dd1] font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl">
                 Start Free Trial
               </button>
               <button className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold hover:bg-white/20 transition-colors duration-300">
@@ -320,8 +316,8 @@ export default function PaymentSolutionsWithBlogs() {
           </div>
 
           {/* Related Articles */}
-          <div className="mt-16 pt-16 border-t border-slate-200">
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">Explore More Solutions</h3>
+          <div className="mt-16 pt-16 border-t border-gray-200">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Explore More Solutions</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {solutions
                 .filter(s => s.id !== currentBlog)
@@ -330,18 +326,18 @@ export default function PaymentSolutionsWithBlogs() {
                   <button
                     key={relatedSolution.id}
                     onClick={() => setCurrentBlog(relatedSolution.id)}
-                    className="text-left bg-slate-50 rounded-xl p-6 hover:bg-slate-100 transition-colors duration-300 border border-slate-200 hover:border-orange-300 group"
+                    className="text-left bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-300 border border-gray-200 hover:border-[#1d7dd1] group"
                   >
                     <div className="w-10 h-10 rounded-lg bg-white shadow-md flex items-center justify-center mb-4">
                       {(() => {
                         const RelatedIcon = relatedSolution.icon
-                        return <RelatedIcon className="w-5 h-5 text-orange-500" />
+                        return <RelatedIcon className="w-5 h-5 text-[#1d7dd1]" />
                       })()}
                     </div>
-                    <h4 className="font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+                    <h4 className="font-bold text-gray-900 mb-2 group-hover:text-[#1d7dd1] transition-colors duration-300">
                       {relatedSolution.title}
                     </h4>
-                    <p className="text-sm text-slate-600 line-clamp-2">{relatedSolution.description}</p>
+                    <p className="text-sm text-gray-600 line-clamp-2">{relatedSolution.description}</p>
                   </button>
                 ))}
             </div>
@@ -353,7 +349,7 @@ export default function PaymentSolutionsWithBlogs() {
 
   // Solutions Grid View
   return (
-    <section  id="solutions-section" className="py-24 bg-slate-50" style={{ fontFamily: "'Inter', sans-serif" }}>
+    <section  id="solutions-section" className="py-24 bg-white" style={{ fontFamily: "'Inter', sans-serif" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
       `}</style>
@@ -361,17 +357,17 @@ export default function PaymentSolutionsWithBlogs() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm mb-4">
-            <Sparkles className="w-4 h-4 text-orange-500" />
-            <span className="text-sm font-semibold text-slate-700 uppercase tracking-wide">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-4">
+            <Sparkles className="w-4 h-4 text-[#1d7dd1]" />
+            <span className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
             Enterprise-Grade Payment Infrastructure
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Built for scale, security, and seamless integration
           </p>
         </div>
@@ -391,12 +387,12 @@ export default function PaymentSolutionsWithBlogs() {
                 <div
                   className={`relative h-full bg-white rounded-2xl border overflow-hidden transition-all duration-300 flex flex-col ${
                     isHovered
-                      ? "border-orange-300 shadow-xl shadow-orange-100/50 -translate-y-1"
-                      : "border-slate-200 shadow-md"
+                      ? "border-[#1d7dd1] shadow-xl shadow-[#1d7dd1]/20 -translate-y-1"
+                      : "border-gray-200 shadow-md"
                   }`}
                 >
                   {/* Image Section */}
-                  <div className="relative h-48 overflow-hidden bg-slate-100">
+                  <div className="relative h-48 overflow-hidden bg-gray-100">
                     <img
                       src={solution.image}
                       alt={solution.title}
@@ -404,7 +400,7 @@ export default function PaymentSolutionsWithBlogs() {
                         isHovered ? "scale-105" : "scale-100"
                       }`}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent" />
                     
                     {/* Icon Badge */}
                     <div className="absolute bottom-4 left-4">
@@ -413,18 +409,18 @@ export default function PaymentSolutionsWithBlogs() {
                           isHovered ? "scale-110" : "scale-100"
                         }`}
                       >
-                        <Icon className="w-6 h-6 text-orange-500" strokeWidth={2} />
+                        <Icon className="w-6 h-6 text-[#1d7dd1]" strokeWidth={2} />
                       </div>
                     </div>
                   </div>
 
                   {/* Content Section */}
                   <div className="flex-1 flex flex-col p-6">
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
                       {solution.title}
                     </h3>
 
-                    <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-1">
+                    <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-1">
                       {solution.description}
                     </p>
 
@@ -432,7 +428,7 @@ export default function PaymentSolutionsWithBlogs() {
                     <button
                       onClick={() => setCurrentBlog(solution.id)}
                       className={`group/btn inline-flex items-center gap-2 text-sm cursor-pointer font-semibold transition-colors duration-300 ${
-                        isHovered ? "text-orange-600" : "text-slate-700"
+                        isHovered ? "text-[#1d7dd1]" : "text-gray-700"
                       }`}
                     >
                       Learn more
@@ -446,7 +442,7 @@ export default function PaymentSolutionsWithBlogs() {
 
                   {/* Top Border Accent */}
                   <div
-                    className={`absolute top-0 left-0 right-0 h-1 bg-orange-500 transition-opacity duration-300 ${
+                    className={`absolute top-0 left-0 right-0 h-1 bg-[#1d7dd1] transition-opacity duration-300 ${
                       isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -457,12 +453,12 @@ export default function PaymentSolutionsWithBlogs() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-20 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden shadow-xl">
+        <div className="mt-20 bg-[#1d7dd1] rounded-2xl overflow-hidden shadow-xl">
           <div className="px-8 py-12 md:px-12 md:py-16 text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Ready to Transform Your Payment Infrastructure?
             </h3>
-            <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Join thousands of businesses already using our enterprise-grade payment solutions
             </p>
 
@@ -470,7 +466,7 @@ export default function PaymentSolutionsWithBlogs() {
   {/* Primary CTA */}
   <Link
     href="/contact"
-    className="px-8 py-4 rounded-xl bg-orange-500 text-white font-semibold text-center hover:bg-orange-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
+    className="px-8 py-4 rounded-xl bg-white text-[#1d7dd1] font-semibold text-center hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl"
   >
     Get Started Free
   </Link>
@@ -484,18 +480,18 @@ export default function PaymentSolutionsWithBlogs() {
   </Link>
 </div>
 
-            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-slate-700">
+            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-white/20">
               <div className="text-center">
                 <p className="text-3xl font-bold text-white mb-1">99.99%</p>
-                <p className="text-sm text-slate-400">Uptime</p>
+                <p className="text-sm text-white/80">Uptime</p>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-white mb-1">10K+</p>
-                <p className="text-sm text-slate-400">Businesses</p>
+                <p className="text-sm text-white/80">Businesses</p>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-white mb-1">$2.4B+</p>
-                <p className="text-sm text-slate-400">Monthly Volume</p>
+                <p className="text-sm text-white/80">Monthly Volume</p>
               </div>
             </div>
           </div>

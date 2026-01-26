@@ -18,21 +18,21 @@ export default function ContactPage() {
       
       {/* Decorative Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-orange-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-[-200px] right-[-200px] w-[500px] h-[500px] bg-orange-400/20 rounded-full blur-3xl" />
+        <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-[#1d7dd1]/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-[-200px] right-[-200px] w-[500px] h-[500px] bg-[#89e897]/20 rounded-full blur-3xl" />
       </div>
 
       {/* Hero Section */}
       <section className="py-20 md:py-28 px-4 md:px-8 text-center">
         <div className="max-w-5xl mx-auto">
-          <span className="inline-block mb-6 px-4 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-700">
+          <span className="inline-block mb-6 px-4 py-1 rounded-full text-sm font-medium bg-[#1d7dd1]/10 text-[#1d7dd1]">
             Contact PayNeor
           </span>
 
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Let’s Build Better Payments
+            Let's Build Better Payments
             <br />
-            <span className="text-orange-600">Together</span>
+            <span className="text-[#1d7dd1]">Together</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -71,8 +71,8 @@ export default function ContactPage() {
               key={i}
               className="group relative rounded-2xl border border-border bg-white/70 backdrop-blur-xl p-8 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-orange-100 mb-6 group-hover:scale-110 transition-transform">
-                <item.icon className="w-7 h-7 text-orange-600" />
+              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#1d7dd1]/10 mb-6 group-hover:scale-110 transition-transform">
+                <item.icon className="w-7 h-7 text-[#1d7dd1]" />
               </div>
 
               <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
@@ -81,7 +81,7 @@ export default function ContactPage() {
               {item.href ? (
                 <a
                   href={item.href}
-                  className="inline-flex items-center font-medium text-orange-600 hover:text-orange-700"
+                  className="inline-flex items-center font-medium text-[#1d7dd1] hover:text-[#89e897]"
                 >
                   {item.value}
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -114,7 +114,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-r from-orange-600 to-orange-500 text-white">
+      <section className="py-24 bg-gradient-to-r from-[#066ac2] to-[#066ac2] text-white">
         <div className="max-w-5xl mx-auto text-center px-4 md:px-8">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
             Ready to Power Your Payments?
@@ -124,7 +124,7 @@ export default function ContactPage() {
             lightning-fast payment infrastructure.
           </p>
 
-          <Link href={'/contact'} className="inline-flex items-center gap-2 bg-white text-orange-600 px-10 py-4 rounded-xl font-semibold text-lg shadow-lg hover:bg-orange-50 hover:scale-105 transition-all">
+          <Link href={'/contact'} className="inline-flex items-center gap-2 bg-white text-[#1d7dd1] px-10 py-4 rounded-xl font-semibold text-lg shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
             Get Started Today
             <ArrowRight className="w-5 h-5" />
           </Link>

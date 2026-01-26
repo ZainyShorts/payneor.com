@@ -26,7 +26,7 @@ const products = [
     name: "N-Genius Point-of-Sale (POS) Device",
     tagline: "Accept all major payment schemes, popular mobile wallets, BNPL, loyalty and more on a single POS device",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-    color: "from-orange-500 to-orange-600",
+    color: "bg-[#1d7dd1]",
     features: [
       "All major payment schemes (Visa, Mastercard, Amex, UnionPay)",
       "Mobile wallets (Apple Pay, Google Pay, Samsung Pay)",
@@ -48,7 +48,7 @@ const products = [
     name: "N-Genius One SoftPOS",
     tagline: "Turn your smartphone into a payment genius. (Available on Android and iOS)",
     image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=800&q=80",
-    color: "from-blue-500 to-blue-600",
+    color: "bg-[#89e897]",
     features: [
       "No additional hardware required",
       "Tap-to-pay on Android & iOS devices",
@@ -70,7 +70,7 @@ const products = [
     name: "N-Genius Online Payment Gateway",
     tagline: "Accept online payments seamlessly. All major schemes, wallets, plugins, BNPL payments and more available",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
-    color: "from-purple-500 to-purple-600",
+    color: "bg-[#1d7dd1]",
     features: [
       "100+ payment methods & currencies",
       "Major eCommerce platform plugins",
@@ -116,15 +116,15 @@ export function ProductSolutions() {
         }
       `}</style>
 
-      <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white via-orange-50/20 to-white">
+      <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white via-white to-white">
         {/* Elegant Background */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(251,146,60,0.08),transparent_50%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(251,191,36,0.06),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(29,125,209,0.08),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(137,232,151,0.06),transparent_50%)]" />
           <div
             className="absolute inset-0 opacity-30"
             style={{
-              backgroundImage: `radial-gradient(circle at 2px 2px, rgb(251 146 60 / 0.1) 1px, transparent 0)`,
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgb(29 125 209 / 0.1) 1px, transparent 0)`,
               backgroundSize: "48px 48px",
             }}
           />
@@ -134,11 +134,11 @@ export function ProductSolutions() {
           {/* Section Header */}
           <div className="text-center mb-16 md:mb-20">
             <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 shadow-sm mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1d7dd1]/10 border border-[#1d7dd1]/20 shadow-sm mb-6"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
-              <Sparkles className="w-4 h-4 text-orange-500" />
-              <span className="text-sm font-bold text-orange-600 uppercase tracking-wider">Our Solutions</span>
+              <Sparkles className="w-4 h-4 text-[#1d7dd1]" />
+              <span className="text-sm font-bold text-[#1d7dd1] uppercase tracking-wider">Our Solutions</span>
             </div>
 
             <h2
@@ -148,7 +148,7 @@ export function ProductSolutions() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage: "linear-gradient(135deg, #ea580c 0%, #f97316 50%, #f59e0b 100%)",
+                  backgroundImage: "linear-gradient(135deg, #1d7dd1 0%, #89e897 100%)",
                   backgroundSize: "200% auto",
                   animation: "shimmer 3s linear infinite",
                   WebkitBackgroundClip: "text",
@@ -158,7 +158,7 @@ export function ProductSolutions() {
               </span>
             </h2>
             <p
-              className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto font-medium"
+              className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-medium"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               of payment solutions that fit your business needs
@@ -178,8 +178,8 @@ export function ProductSolutions() {
                     group relative text-left p-8 rounded-3xl border-2 transition-all duration-500
                     ${
                       isActive
-                        ? "bg-white border-orange-300 shadow-2xl shadow-orange-200/50 scale-105"
-                        : "bg-white/60 border-slate-200 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-100/30"
+                        ? "bg-white border-[#1d7dd1] shadow-2xl shadow-[#1d7dd1]/20 scale-105"
+                        : "bg-white/60 border-gray-200 hover:border-[#1d7dd1] hover:shadow-xl hover:shadow-[#1d7dd1]/10"
                     }
                   `}
                   style={{ animation: isActive ? "slideIn 0.5s ease-out" : "none" }}
@@ -187,7 +187,7 @@ export function ProductSolutions() {
                   {/* Badge */}
                   {prod.badge && (
                     <div
-                      className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold text-white ${isActive ? "bg-gradient-to-r " + prod.color : "bg-slate-400"}`}
+                      className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold text-white ${isActive ? prod.color : "bg-gray-400"}`}
                       style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                     >
                       {prod.badge}
@@ -198,16 +198,16 @@ export function ProductSolutions() {
                   <div
                     className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6 transition-all duration-500 ${
                       isActive
-                        ? `bg-gradient-to-br ${prod.color} shadow-lg`
-                        : "bg-gradient-to-br from-slate-100 to-slate-200"
+                        ? `${prod.color} shadow-lg`
+                        : "bg-gradient-to-br from-gray-100 to-gray-200"
                     }`}
                   >
-                    <ProdIcon className={`w-8 h-8 ${isActive ? "text-white" : "text-slate-600"}`} />
+                    <ProdIcon className={`w-8 h-8 ${isActive ? "text-white" : "text-gray-600"}`} />
                   </div>
 
                   {/* Title */}
                   <h3
-                    className={`text-xl font-bold mb-2 transition-colors ${isActive ? "text-slate-900" : "text-slate-700 group-hover:text-slate-900"}`}
+                    className={`text-xl font-bold mb-2 transition-colors ${isActive ? "text-gray-900" : "text-gray-700 group-hover:text-gray-900"}`}
                     style={{ fontFamily: "'Outfit', sans-serif" }}
                   >
                     {prod.name}
@@ -215,7 +215,7 @@ export function ProductSolutions() {
 
                   {/* Active Indicator */}
                   {isActive && (
-                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-b-3xl" />
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#89e897] rounded-b-3xl" />
                   )}
                 </button>
               )
@@ -228,30 +228,30 @@ export function ProductSolutions() {
             <div
               className="absolute -inset-8 rounded-[48px] blur-3xl opacity-60"
               style={{
-                background: `linear-gradient(135deg, rgba(251,146,60,0.3) 0%, rgba(251,191,36,0.2) 100%)`,
+                background: `linear-gradient(135deg, rgba(29,125,209,0.3) 0%, rgba(137,232,151,0.2) 100%)`,
                 animation: "glow 4s ease-in-out infinite",
               }}
             />
 
-            <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-[32px] overflow-hidden shadow-2xl border border-slate-700">
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-[32px] overflow-hidden shadow-2xl border border-gray-700">
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Content Side */}
                 <div className="p-8 md:p-12 lg:p-16 order-2 lg:order-1 relative z-10">
                   {/* Decorative Elements */}
-                  <div className="absolute top-0 left-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl" />
-                  <div className="absolute bottom-0 right-0 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl" />
+                  <div className="absolute top-0 left-0 w-32 h-32 bg-[#1d7dd1]/10 rounded-full blur-3xl" />
+                  <div className="absolute bottom-0 right-0 w-40 h-40 bg-[#89e897]/10 rounded-full blur-3xl" />
 
                   <div className="relative z-10">
                     {/* Icon & Badge */}
                     <div className="flex items-center gap-4 mb-6">
                       <div
-                        className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${product.color} shadow-lg`}
+                        className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${product.color} shadow-lg`}
                       >
                         <Icon className="w-8 h-8 text-white" />
                       </div>
                       {product.badge && (
                         <span
-                          className={`px-4 py-1.5 rounded-full bg-gradient-to-r ${product.color} text-white text-xs font-bold uppercase tracking-wider`}
+                          className={`px-4 py-1.5 rounded-full ${product.color} text-white text-xs font-bold uppercase tracking-wider`}
                           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                         >
                           {product.badge}
@@ -269,7 +269,7 @@ export function ProductSolutions() {
 
                     {/* Tagline */}
                     <p
-                      className="text-lg md:text-xl text-slate-300 leading-relaxed mb-10"
+                      className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10"
                       style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                     >
                       {product.tagline}
@@ -279,11 +279,11 @@ export function ProductSolutions() {
                     <div className="grid sm:grid-cols-2 gap-4 mb-10">
                       {product.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3 group">
-                          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-500/20 flex items-center justify-center mt-0.5">
-                            <CheckCircle2 className="w-4 h-4 text-orange-400" />
+                          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#1d7dd1]/20 flex items-center justify-center mt-0.5">
+                            <CheckCircle2 className="w-4 h-4 text-[#1d7dd1]" />
                           </div>
                           <p
-                            className="text-sm text-slate-400 group-hover:text-slate-300 transition-colors"
+                            className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors"
                             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                           >
                             {feature}
@@ -293,13 +293,13 @@ export function ProductSolutions() {
                     </div>
 
                     {/* Stats Row */}
-                    <div className="grid grid-cols-3 gap-6 pt-8 border-t border-slate-700 mb-10">
+                    <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-700 mb-10">
                       {product.stats.map((stat, idx) => {
                         const StatIcon = stat.icon
                         return (
                           <div key={idx} className="text-center group cursor-pointer">
-                            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 group-hover:border-orange-500/50 transition-colors mb-3">
-                              <StatIcon className="w-6 h-6 text-orange-400" />
+                            <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 group-hover:border-[#1d7dd1]/50 transition-colors mb-3">
+                              <StatIcon className="w-6 h-6 text-[#1d7dd1]" />
                             </div>
                             <p
                               className="text-2xl font-black text-white mb-1"
@@ -308,7 +308,7 @@ export function ProductSolutions() {
                               {stat.value}
                             </p>
                             <p
-                              className="text-xs text-slate-500 font-medium"
+                              className="text-xs text-gray-500 font-medium"
                               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                             >
                               {stat.label}
@@ -320,7 +320,7 @@ export function ProductSolutions() {
 
                     {/* CTA Button */}
                     <button
-                      className={`group inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r ${product.color} text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105`}
+                      className={`group inline-flex items-center gap-3 px-8 py-4 rounded-2xl ${product.color} text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105`}
                       style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                     >
                       Get Started
@@ -332,7 +332,7 @@ export function ProductSolutions() {
                 {/* Image Side */}
                 <div className="relative h-[400px] lg:h-full min-h-[600px] order-1 lg:order-2">
                   {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-l from-transparent via-slate-900/50 to-slate-900 z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-l from-transparent via-gray-900/50 to-gray-900 z-10" />
 
                   {/* Image */}
                   <Image
@@ -348,22 +348,20 @@ export function ProductSolutions() {
                     style={{ animation: "float 3s ease-in-out infinite" }}
                   >
                     <div className="flex items-center gap-4">
-                      <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${product.color} flex items-center justify-center shadow-lg`}>
+                      <div className={`w-14 h-14 rounded-2xl ${product.color} flex items-center justify-center shadow-lg`}>
                         <Shield className="w-7 h-7 text-white" />
                       </div>
                       <div>
                         <p
-                          className="text-3xl font-black bg-clip-text text-transparent"
+                          className="text-3xl font-black text-[#1d7dd1]"
                           style={{
-                            backgroundImage: `linear-gradient(135deg, ${product.color.replace('from-', 'rgb(').replace(' to-', ', ')})`,
-                            WebkitBackgroundClip: "text",
                             fontFamily: "'Outfit', sans-serif",
                           }}
                         >
                           Secure
                         </p>
                         <p
-                          className="text-sm text-slate-600 font-semibold"
+                          className="text-sm text-gray-600 font-semibold"
                           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                         >
                           PCI DSS Certified
@@ -374,19 +372,19 @@ export function ProductSolutions() {
 
                   {/* Bottom Stats Card */}
                   <div
-                    className="absolute bottom-8 left-8 z-20 bg-slate-900/95 backdrop-blur-xl rounded-2xl p-5 shadow-2xl border border-slate-700 hidden md:block"
+                    className="absolute bottom-8 left-8 z-20 bg-gray-900/95 backdrop-blur-xl rounded-2xl p-5 shadow-2xl border border-gray-700 hidden md:block"
                     style={{ animation: "float 3s ease-in-out infinite 1s" }}
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center">
-                        <Zap className="w-6 h-6 text-green-400" />
+                      <div className="w-12 h-12 rounded-xl bg-[#89e897]/20 flex items-center justify-center">
+                        <Zap className="w-6 h-6 text-[#89e897]" />
                       </div>
                       <div>
                         <p className="text-2xl font-black text-white" style={{ fontFamily: "'Outfit', sans-serif" }}>
                           Real-time
                         </p>
                         <p
-                          className="text-xs text-slate-400 font-medium"
+                          className="text-xs text-gray-400 font-medium"
                           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                         >
                           Processing
@@ -402,7 +400,7 @@ export function ProductSolutions() {
           {/* Bottom Trust Section */}
           <div className="mt-20 text-center">
             <p
-              className="text-sm font-bold text-slate-400 uppercase tracking-[0.3em] mb-8"
+              className="text-sm font-bold text-gray-400 uppercase tracking-[0.3em] mb-8"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               Trusted by 10,000+ businesses
@@ -411,7 +409,7 @@ export function ProductSolutions() {
               {["Visa", "Mastercard", "Apple Pay", "Google Pay", "Amex"].map((brand) => (
                 <div
                   key={brand}
-                  className="text-2xl font-black text-slate-300 hover:text-orange-500 transition-all duration-300 cursor-pointer hover:scale-110"
+                  className="text-2xl font-black text-gray-300 hover:text-[#1d7dd1] transition-all duration-300 cursor-pointer hover:scale-110"
                   style={{ fontFamily: "'Outfit', sans-serif" }}
                 >
                   {brand}

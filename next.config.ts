@@ -11,7 +11,8 @@ const nextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "img.freepik.com" },
       { protocol: "https", hostname: "media.istockphoto.com" },
-      { protocol: "https", hostname: "www.telefonica.com" }, // newly added
+      { protocol: "https", hostname: "www.telefonica.com" },
+      { protocol: "https", hostname: "res.cloudinary.com" }, // ✅ ADD THIS
     ],
   },
 };

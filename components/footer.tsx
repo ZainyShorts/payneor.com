@@ -33,18 +33,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center space-x-1 mb-6">
-              {/* <Image src='/payneor2.png' alt="PayNeor" width={50} height={50}  /> */}
-              {/* <span className="text-2xl  tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                PAY
-              <span className="text-2xl font-bold tracking-tight text-foreground">NEOR</span>
-              </span> */}
-              <span className="text-2xl tracking-tight">
-                <span className="font-pay italic bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                  PAY
-                </span>
-                <span className="font-neor italic font-bold text-foreground">NEOR</span>
-              </span>
+           <Link href="/" className="flex items-center  group" aria-label="Payneor Home">
+              <div className="flex items-baseline gap-1">
+              
+              </div>
+              <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png" alt="PayNeor" width={100} height={32} className="hidden sm:block h-16 w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-8">
               Powering the future of payments in the Middle East. State-of-the-art payment solutions designed for scale.

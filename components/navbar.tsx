@@ -32,12 +32,9 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center  group" aria-label="Payneor Home">
               <div className="flex items-baseline gap-1">
-                <span className="text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                  PAY
-                </span>
-                <span className="text-2xl md:text-3xl font-bold tracking-tight text-primary">NEOR</span>
+              
               </div>
-              <Image src="/logo.png" alt="PayNeor" width={100} height={32} className="hidden sm:block h-16 w-auto" />
+              <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1769384033/ChatGPT_Image_Jan_26__2026__04_32_03_AM-removebg-preview_jftkhn.png" alt="PayNeor" width={100} height={45} className="hidden sm:block h-20 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
