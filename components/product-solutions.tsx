@@ -23,7 +23,7 @@ const products = [
     id: "pos",
     icon: Monitor,
     badge: "Most Popular",
-    name: "N-Genius Point-of-Sale (POS) Device",
+    name: "Payneor Point-of-Sale (POS) Device",
     tagline: "Accept all major payment schemes, popular mobile wallets, BNPL, loyalty and more on a single POS device",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     color: "bg-[#1d7dd1]",
@@ -45,7 +45,7 @@ const products = [
     id: "softpos",
     icon: Smartphone,
     badge: "New",
-    name: "N-Genius One SoftPOS",
+    name: "Payneor One SoftPOS",
     tagline: "Turn your smartphone into a payment genius. (Available on Android and iOS)",
     image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=800&q=80",
     color: "bg-[#89e897]",
@@ -67,7 +67,7 @@ const products = [
     id: "gateway",
     icon: Globe,
     badge: "Enterprise",
-    name: "N-Genius Online Payment Gateway",
+    name: "Payneor Online Payment Gateway",
     tagline: "Accept online payments seamlessly. All major schemes, wallets, plugins, BNPL payments and more available",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
     color: "bg-[#1d7dd1]",
@@ -184,7 +184,6 @@ export function ProductSolutions() {
                   `}
                   style={{ animation: isActive ? "slideIn 0.5s ease-out" : "none" }}
                 >
-                  {/* Badge */}
                   {prod.badge && (
                     <div
                       className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold text-white ${isActive ? prod.color : "bg-gray-400"}`}
@@ -194,7 +193,6 @@ export function ProductSolutions() {
                     </div>
                   )}
 
-                  {/* Icon */}
                   <div
                     className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-6 transition-all duration-500 ${
                       isActive
@@ -205,7 +203,6 @@ export function ProductSolutions() {
                     <ProdIcon className={`w-8 h-8 ${isActive ? "text-white" : "text-gray-600"}`} />
                   </div>
 
-                  {/* Title */}
                   <h3
                     className={`text-xl font-bold mb-2 transition-colors ${isActive ? "text-gray-900" : "text-gray-700 group-hover:text-gray-900"}`}
                     style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -213,7 +210,6 @@ export function ProductSolutions() {
                     {prod.name}
                   </h3>
 
-                  {/* Active Indicator */}
                   {isActive && (
                     <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#89e897] rounded-b-3xl" />
                   )}

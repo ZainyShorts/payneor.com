@@ -3,49 +3,49 @@
 export function CompanyMilestone() {
   const milestones = [
     {
-      year: "1990",
+      year: "2020",
       title: "Payneor starts Business",
     },
     {
-      year: "2014",
+      year: "2021",
       title: "E-commerce Acquiring introduced and relationships signed up",
     },
     {
-      year: "2015",
+      year: "2022",
       title: "Integrated payment solutions launched",
     },
     {
-      year: "2016",
+      year: "2023",
       title: "Launched Integrated Hospitality payment solutions",
     },
+    // {
+    //   year: "2017",
+    //   title: "Payneor launched Apple Pay and Samsung Pay",
+    // },
+    // {
+    //   year: "2018",
+    //   title: "Migrated to state of the art acquiring platform",
+    // },
     {
-      year: "2017",
-      title: "Payneor launched Apple Pay and Samsung Pay",
-    },
-    {
-      year: "2018",
-      title: "Migrated to state of the art acquiring platform",
-    },
-    {
-      year: "2019",
+      year: "2024",
       title: "Launched DCC on ecommerce",
     },
     {
-      year: "2020",
+      year: "2025",
       title: "Launched Emirates Digital Wallet acceptance on Payneor terminals",
     },
     {
-      year: "2021",
+      year: "2026",
       title: "Launched the portal for merchants",
     },
-    {
-      year: "2022",
-      title: "Established Payneor as a fully owned subsidiary",
-    },
-    {
-      year: "2024",
-      title: "Payneor sold a majority stake in Payneor",
-    },
+    // {
+    //   year: "2022",
+    //   title: "Established Payneor as a fully owned subsidiary",
+    // },
+    // {
+    //   year: "2024",
+    //   title: "Payneor sold a majority stake in Payneor",
+    // },
   ]
 
   return (
