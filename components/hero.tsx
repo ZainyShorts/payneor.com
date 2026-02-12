@@ -264,13 +264,13 @@ export function Hero() {
                         fontFamily: "'Outfit', sans-serif",
                       }}
                     >
-                      $2.4B+
+                      $100M+
                     </p>
                     <p
                       className="text-sm text-gray-500 font-semibold"
                       style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                     >
-                      Processed Monthly
+                      Processed Yearly
                     </p>
                   </div>
                 </div>

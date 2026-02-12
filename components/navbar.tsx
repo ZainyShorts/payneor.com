@@ -43,7 +43,7 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm md:text-base font-medium text-foreground hover:text-accent transition-colors relative group py-2"
+                  className="text-sm md:text-base font-bold font-serif text-foreground hover:text-accent transition-colors relative group py-2"
                 >
                   {link.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
